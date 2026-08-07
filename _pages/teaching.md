@@ -8,7 +8,7 @@ nav_order: 6
 calendar: true
 ---
 
-This page displays a collection of courses with detailed schedules, materials, and resources. 
+This page displays a collection of courses with detailed schedules, materials, and resources.
 
 {% include calendar.liquid calendar_id='HeyHsuanchengLin@gmail.com' timezone='Asia/Shanghai' %}
 
