@@ -77,6 +77,9 @@ h6 a,
 
 a,
 a:visited,
+.post .post-tags a,
+.featured-posts a,
+.post-description a,
 .navbar.navbar-light .navbar-nav .nav-item .nav-link,
 .navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
   color: var(--global-text-color);
