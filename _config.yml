@@ -135,7 +135,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Linhsuancheng's Blogs # blog_name will be displayed in your blog page
-blog_description: About Tech, Alcohol, and Vice
+blog_description: About Everything
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -242,7 +242,6 @@ exclude:
   - lighthouse_results/
   - package.json
   - package-lock.json
-  - _pages/about_einstein.md
   - purgecss.config.js
   - README.md
   - readme_preview/

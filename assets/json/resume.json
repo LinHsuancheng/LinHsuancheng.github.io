@@ -1,12 +1,11 @@
 {
   "basics": {
     "name": "Hsuancheng Lin",
-    "label": "a nice guy",
     "image": "MilkyDragon.png",
     "email": "HeyHsuanchengLin@gmail.com",
     "summary": "A curious mind interested in computer science, artificial intelligence, finance, and the occasional brainteaser.",
     "location": {
-      "address": "Nowhere"
+      "address": ""
     },
     "profiles": [
       {
@@ -22,7 +21,7 @@
       "area": "Electronics",
       "startDate": "2024",
       "endDate": "2028",
-      "highlights": ["Description 1. I feel discouraged in Peking Univ."]
+      "highlights": []
     }
   ],
   "languages": [
