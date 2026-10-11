@@ -1,0 +1,86 @@
+:root,
+html[data-theme="light"],
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --global-bg-color: #0b0b0a;
+  --global-code-bg-color: #171715;
+  --global-text-color: #e8e5dc;
+  --global-text-color-light: #a7a397;
+  --global-theme-color: #e8e5dc;
+  --global-hover-color: #ffffff;
+  --global-hover-text-color: #0b0b0a;
+  --global-footer-bg-color: #0b0b0a;
+  --global-footer-text-color: #a7a397;
+  --global-footer-link-color: #e8e5dc;
+  --global-divider-color: #34332f;
+  --global-card-bg-color: #121210;
+  --global-highlight-color: #c5a66f;
+  --global-newsletter-bg-color: #171715;
+  --global-newsletter-text-color: #e8e5dc;
+}
+
+html,
+body {
+  background: #0b0b0a;
+  color: #e8e5dc;
+  font-family: "Inter", Arial, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.navbar-brand,
+.header-bar h1,
+.post-title {
+  color: #f0ede5;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+a,
+a:visited,
+.navbar.navbar-light .navbar-nav .nav-item .nav-link,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link {
+  color: #e8e5dc;
+}
+
+a:hover,
+.navbar.navbar-light .navbar-nav .nav-item .nav-link:hover,
+.navbar.navbar-light .navbar-nav .nav-item.active > .nav-link:hover {
+  color: #ffffff;
+  text-decoration: underline;
+  text-decoration-color: #8c826f;
+  text-underline-offset: 0.18em;
+}
+
+.navbar,
+.navbar.navbar-light,
+.dropdown-menu,
+.card,
+.post-list > li,
+blockquote {
+  background-color: #0b0b0a;
+  border-color: #34332f;
+}
+
+.card,
+.dropdown-menu {
+  background-color: #121210;
+}
+
+.btn,
+button,
+input,
+textarea,
+select {
+  border-color: #514d44;
+  background-color: #121210;
+  color: #e8e5dc;
+}
+
+::selection {
+  background: #c5a66f;
+  color: #0b0b0a;
+}
