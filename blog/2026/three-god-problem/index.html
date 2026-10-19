@@ -1,0 +1,127 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> <meta charset="utf-8"> <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <title> 语言，神，和谜语——关于三神的谜题 | Lin Hsuancheng's Corner 😋 </title> <meta name="author" content="Hsuancheng Lin"> <meta name="description" content="Personal website of Lin Hsuancheng "> <meta name="keywords" content="Lin Hsuancheng, Computer Science, Machine learning"> <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: https:; font-src 'self' data: https:; media-src 'self' https:; frame-src 'self' https:; connect-src 'self' https:;"> <style>
+  :root {
+    --max-content-width: 930px;
+  }
+</style> <link rel="stylesheet" href="/assets/css/tailwind.css?v=50c64c15cbb9fd1ce6056fdb8bcb4b62"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@7.2.0/css/all.min.css" integrity="sha256-MVopmdyC2tYTiJ8wlktf0uh0v4NgT+vNdyVFepi7Q0c=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.5/css/academicons.min.css" integrity="sha256-SzrCOBJbGVFMahewkgjwnApaV2+av1DwMAA+/QGLyZw=" crossorigin="anonymous"> <link defer rel="stylesheet" href="https://cdn.jsdelivr.net/npm/scholar-icons@1.0.3/css/scholar-icons.css" integrity="sha256-VY3hHVj/hNX3fYG6wtbA6TcKJQl7+FthzGSyIB64klY=" crossorigin="anonymous"> <link defer rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Libre+Baskerville:wght@400;700&amp;family=Noto+Serif+SC:wght@400;600&amp;display=swap"> <link defer rel="stylesheet" href="/assets/css/jekyll-pygments-themes-github.css?v=591dab5a4e56573bf4ef7fd332894c99" media="" id="highlight_theme_light"> <link rel="shortcut icon" href="data:image/svg+xml,&lt;svg%20xmlns=%22http://www.w3.org/2000/svg%22%20viewBox=%220%200%20100%20100%22&gt;&lt;text%20y=%22.9em%22%20font-size=%2290%22&gt;%F0%9F%98%8B&lt;/text&gt;&lt;/svg&gt;"> <link rel="stylesheet" href="/assets/css/main.css?v=3116ba77db9ee1581d05bb3e86fbf7f1"> <link rel="canonical" href="https://linhsuancheng.github.io/blog/2026/three-god-problem/"> <link rel="stylesheet" href="/assets/al_email_protect/css/email-protect.css"> <link rel="stylesheet" href="/assets/css/editorial.css?v=5a77dff1933dbd58befddfa33ae889ae"> </head> <body class="fixed-top-nav "> <header> <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top" role="navigation"> <div class="container"> <a class="navbar-brand title font-weight-lighter" href="/"> Lin Hsuancheng's Corner 😋 </a> <button class="navbar-toggler collapsed navbar-toggler-main" type="button" data-nav-toggle="navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar top-bar"></span> <span class="icon-bar middle-bar"></span> <span class="icon-bar bottom-bar"></span> </button> <div class="collapse navbar-collapse navbar-collapse-main" id="navbarNav"> <ul class="navbar-nav navbar-menu-list flex-nowrap"> <li class="nav-item "> <a class="nav-link" href="/">about </a> </li> <li class="nav-item active"> <a class="nav-link" href="/blog/">blog </a> </li> <li class="nav-item "> <a class="nav-link" href="/publications/">publications </a> </li> <li class="nav-item "> <a class="nav-link" href="/projects/">projects </a> </li> <li class="nav-item "> <a class="nav-link" href="/repositories/">repositories </a> </li> <li class="nav-item "> <a class="nav-link" href="/teaching/">teaching </a> </li> <li class="nav-item"> <button id="search-toggle" type="button" title="Search" aria-label="Open search"> <span class="nav-link">ctrl k <i class="fa-solid fa-magnifying-glass"></i></span> </button> </li> </ul> </div> </div> </nav> <progress id="progress" value="0"> <div class="progress-container"> <span class="progress-bar"></span> </div> </progress> </header> <div class="container mt-5" role="main"> <div class="post"> <header class="post-header"> <h1 class="post-title">语言，神，和谜语——关于三神的谜题</h1> <p class="post-meta"> Created on October 16, 2026 </p> <p class="post-tags"> <a href="/blog/2026"> <i class="fa-solid fa-calendar fa-sm"></i> 2026 </a>   ·   <a href="/blog/tag/logic"> <i class="fa-solid fa-hashtag fa-sm"></i> logic</a>   <a href="/blog/tag/puzzle"> <i class="fa-solid fa-hashtag fa-sm"></i> puzzle</a>   ·   <a href="/blog/category/curiosity"> <i class="fa-solid fa-tag fa-sm"></i> curiosity</a> </p> </header> <article class="post-content"> <div id="markdown-content"> <h3 id="谜语">谜语</h3> <p>我们来看下面的<a href="https://en.wikipedia.org/wiki/The_Hardest_Logic_Puzzle_Ever" rel="external nofollow noopener" target="_blank">谜题</a>，它看起来很有趣。</p> <blockquote> <p>Three gods A, B, and C are called, in no particular order, True, False, and Random. True always speaks truly, False always speaks falsely, but whether Random speaks truly or falsely is a completely random matter. Your task is to determine the identities of A, B, and C by asking three yes–no questions; each question must be put to exactly one god. The gods understand English, but will answer all questions in their own language, in which the words for yes and no are <em>da</em> and <em>ja</em>, in some order. You do not know which word means which.</p> </blockquote> <p>补充：</p> <blockquote> <p>a single god may be asked more than one question, questions are permitted to depend on the answers to earlier questions, and the nature of Random’s response should be thought of as depending on the flip of a fair coin hidden in his brain: if the coin comes down heads, he speaks truly; if tails, falsely.</p> </blockquote> <h3 id="谜语的历史">谜语的历史</h3> <ul> <li>这个谜题被 George Boolos 称为”史上最难的逻辑谜题”，1996 年发表于 <em>The Harvard Review of Philosophy</em>。更早的意大利文版本曾刊登在 <em>La Repubblica</em> 上，标题为 <em>L’indovinello più difficile del mondo</em>。</li> <li>Boolos 将谜题的原创归于 Raymond Smullyan，并说明 John McCarthy 加入了”da 和 ja 含义未知”这一难点。</li> </ul> <h3 id="我们的构造">我们的构造</h3> <h4 id="形式化的定义">形式化的定义</h4> <p>首先，让我们对问题有一个形式化的定义。</p> <p>我们把神看作一个黑盒函数，祂掌握了任意命题 $P$ 的真假，但是由于祂的一点小癖好，祂不会告诉你 $\mathbb{1}[P]$（也就是命题 $P$ 的真假），而是告诉你 \(Ask_{god}(P) := \mathbb{1}[P] \oplus key_{god} \oplus key_{language}\)</p> <p>其中 $key_{god}$ 是神的身份密钥，$key_{language}$ 是语言密钥，分别有： \(key_{god} = \begin{cases} 0 &amp; \text{if god is True} \\ 1 &amp; \text{if god is False} \\ \text{randomly chosen} &amp; \text{if god is Random} \end{cases}\)</p> <p>和</p> \[key_{language} = \begin{cases} 0 &amp; \text{if "da" means yes} \\ 1 &amp; \text{if "da" means no} \end{cases}\] <h4 id="一点简单的小-trick">一点简单的小 Trick</h4> <p>我们很容易想到，对所有 $key_{language}$，我们都可以询问 $P \oplus key_{language}$，来消除语言密钥的影响。原因是对所有 $a$，我们都有 \(a \oplus a = 0\) 这样就有 \(\begin{aligned} \operatorname{Ask}_{\text{god}}(P \oplus key_{\text{language}}) &amp;= \mathbb{1}[P] \oplus key_{\text{god}} \oplus key_{\text{language}} \oplus key_{\text{language}} \\ &amp;= \mathbb{1}[P] \oplus key_{\text{god}} \end{aligned}\)</p> <p>因此，对所有我们实际感兴趣的命题 $P$，我们都可以询问 $P \oplus key_{language}$ 来假装实际上没有语言 Key。在接下来的论述中，我们假设实际上没有语言 Key。</p> <p>同样的，我们也可以通过询问 $P \oplus key_{god}$ 来消除神的身份密钥的影响。但这里有一个小问题：对于 Random 神来说，$key_{god}$ 是随机的，因此，询问 \(P \oplus key_{god}\) 的结果是 \(\begin{aligned} \operatorname{Ask}_{\text{god}}(P \oplus key_{\text{god}}) &amp;= \mathbb{1}[P] \oplus key_{\text{god}} \oplus key_{\text{god}} \\ &amp;= \begin{cases} \mathbb{1}[P] &amp; \text{if god is True or False} \\ \text{randomly chosen} &amp; \text{if god is Random} \end{cases} \end{aligned}\)</p> <p>这样，通过询问 $\mathbf{1}[P] \oplus key_{god}$，我们就将问题转化为了下面这个形式：</p> <blockquote> <p>已知有三个神，True，False 和 Random。True 和 False 在我们通过合适的方式问问题时总是给出正确的答案，然而 Random 是个坏蛋，我们向他问问题时他总是扔硬币。好在我们和神们的语言是相通的。我们怎么用三个问题确认三位神的身份呢？</p> </blockquote> <h4 id="我们的解答">我们的解答</h4> <p>在这里我们给出一个解答。我们注意到，实际上有了合适的提问方式之后，True 和 False 都是可靠的神谕机，而 Random 是一个坏蛋。因此我们的第一步，是找到坏蛋，然后不问通过一通乱搞，我们找到了这样的一个命题： \(P := \forall B \operatorname{Ask}_{B}(\text{C is True})\) 然后我们询问 $Ask_A(P)$：如果 A 是 Random，我们会得到 true 或者 false 的随机答案；如果 B 是 Random，我们会得到 false（因为 Random 神的回答是随机的，所以 A 不知道 $\forall B \operatorname{Ask}_{B}$ 是什么东西）；如果 C 是 Random，我们会得到 true（因为 C is True 是 false，而 AB 是可靠的神谕机，我们会得到）。</p> <p>总结起来，如果回答是 true，那么 AC 可能是 Random，而 B 是可靠的神谕机；如果回答是 false，那么 AB 可能是 Random，而 C 是可靠的神谕机。</p> <p>这样，通过一次问答，我们得到了一个可靠的神谕机。接下来，我们可以问这个可靠的神谕机两个问题，来确定三位神的身份。</p> <p>不妨设 B 是可靠的神谕机。我们可以问 B 两个问题：问题;或者至少，我们要找到一台可靠的神谕机，然后我们问祂问题。</p> <p>通过一通乱搞，我们找到了这样的一个命题： \(P := \forall B \operatorname{Ask}_{B}(\text{C is Random})\) 然后我们询问 $Ask_A(P)$：如果 A 是 Random，我们会得到 true 或者 false 的随机答案；如果 B 是 Random，我们会得到 false（因为 Random 神的回答是随机的，所以 A 不知道 $\forall B \operatorname{Ask}_{B}$ 是什么东西）；如果 C 是 Random，我们会得到 true（因为 C is True 是 true，而 AB 是可靠的神谕机）。</p> <p>总结起来，如果回答是 true，那么 AC 可能是 Random，而 B 是可靠的神谕机；如果回答是 false，那么 AB 可能是 Random，而 C 是可靠的神谕机。</p> <p>这样，通过一次问答，我们得到了一个可靠的神谕机。接下来，我们可以问这个可靠的神谕机两个问题，来确定三位神的身份。</p> <p>不妨设 B 是可靠的神谕机。我们可以问 B 两个问题： \(Ask_B(\text{B is True})\) 和 \(Ask_B(\text{C is Random})\)</p> <p>这样，根据 B 的不同回答，我们知道了三位神的身份：</p> <table> <thead> <tr> <th>$Ask_B(\text{B is True})$</th> <th>$Ask_B(\text{C is Random})$</th> <th>A</th> <th>B</th> <th>C</th> </tr> </thead> <tbody> <tr> <td>True</td> <td>True</td> <td>False</td> <td>True</td> <td>Random</td> </tr> <tr> <td>True</td> <td>False</td> <td>Random</td> <td>True</td> <td>False</td> </tr> <tr> <td>False</td> <td>True</td> <td>True</td> <td>False</td> <td>Random</td> </tr> <tr> <td>False</td> <td>False</td> <td>Random</td> <td>False</td> <td>True</td> </tr> </tbody> </table> <h4 id="自然语言版本">自然语言版本</h4> <p>我们整理自然语言版本的提问方式如下：</p> <p>我们向 A 提问：</p> <blockquote> <p>如果我问你下面这个问题，你会回答 da 吗？ 「无论 B 怎么行动，如果我问 B『如果我问你 C 是 Random，你会回答 da 吗？』，B 都一定会回答 da。」</p> </blockquote> <p>第二个问题，不妨假设 A 回答了 da，因此我们知道 B 是可靠的神谕机。</p> <p>我们向 B 提问：</p> <blockquote> <p>如果我问你「你是 True 吗？」，你会回答 da 吗？</p> </blockquote> <p>如果 B 回答 da，那么 B 是 True；如果回答 ja，那么 B 是 False。</p> <p>第三个问题：</p> <p>我们继续向 B 提问：</p> <blockquote> <p>如果我问你「C 是 Random 吗？」，你会回答 da 吗？</p> </blockquote> <p>如果 B 回答 da，那么 C 是 Random；否则 A 是 Random。</p> <p>结合第二个问题的回答，我们就能确定三位神的全部身份。</p> <p>如果第一个问题得到 ja，我们只需要将后面两个问题改为询问 C，并在第三问判断 B 是否为 Random，逻辑完全相同。</p> <p>至此，我们使用三个问题解决了这个谜题。</p> <h4 id="为什么三个问题是最优的">为什么三个问题是最优的？</h4> <p>三位神分别为 True、False、Random，因此共有 $3!=6$ 种可能的身份排列。</p> <p>每个问题只有两种可能的回答，因此，$n$ 个问题最多只能区分 $2^n$ 种情况。</p> <p>所以 $2^n\ge 6$，也就是 $n\ge \lceil\log_2 6\rceil=3$。</p> <h3 id="经典解法">经典解法</h3> <p>我们展示经典解法和我们的构造有什么不同，首先给出经典的解法的自然语言版本：</p> <p>第一个问题，向 A 提问：</p> <blockquote> <p>「如果我问你『B 是 Random 吗？』，你会回答 da 吗？」</p> </blockquote> <p>如果回答 da，那么 C 是可靠的神谕机；如果回答 ja，那么 B 是可靠的神谕机。</p> <p>不妨设 A 回答 ja，因此 B 是可靠的神谕机。</p> <p>第二个问题，向 B 提问：</p> <blockquote> <p>「如果我问你『你是 True 吗？』，你会回答 da 吗？」</p> </blockquote> <p>第三个问题，继续向 B 提问：</p> <blockquote> <p>「如果我问你『C 是 Random 吗？』，你会回答 da 吗？」</p> </blockquote> <p>这样，我们就确定了三位神的身份。</p> <h4 id="我们与经典解法的区别">我们与经典解法的区别</h4> <p>可以看到，我们的构造和经典构造基本一样，区别只在于第一个问题，我们询问： \(\forall B \operatorname{Ask}_{B}(\text{C is True})\) 而经典构造询问： \(\operatorname{Ask}_{A}(\text{B is Random})\)</p> <p>简单的分析告诉我们这两个问题是等价的。</p> </div> </article> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Hsuancheng Lin. Powered by <a href="https://jekyllrb.com/" target="_blank" rel="external nofollow noopener">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" rel="external nofollow noopener" target="_blank">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="external nofollow noopener">GitHub Pages</a>. Last updated: October 19, 2026. </div> </footer> <script>
+  window.alFolio = {
+    compatBootstrap: false
+  };
+</script> <script src="/assets/js/nav-toggle.js?v=141bd79a73ebc0f0b6ea58e440ae79fc"></script> <script defer src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script> <script defer src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script> <script defer src="/assets/js/masonry.js?v=e49affc7bd2646f6acdad1dbe02c2359" type="text/javascript"></script> <script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-mml-chtml.js" integrity="sha256-MASABpB4tYktI2Oitl4t+78w/lyA+D7b/s9GEP0JOGI=" crossorigin="anonymous"></script> <script src="/assets/al_math/js/mathjax-setup.js"></script> <script src="/assets/js/tooltips-setup.js?v=fe487e99db6c43751e6e7bdb2d6a0611"></script> <script src="/assets/js/no_defer.js?v=53b1b1a645525975c963ce8bf8bfefcf"></script> <script defer src="/assets/js/common.js?v=87baac90f765f2f3362dcf6aaf312a8a"></script> <script defer src="/assets/js/copy_code.js?v=c8a01c11a92744d44b093fc3bda915df" type="text/javascript"></script> <script defer src="/assets/js/jupyter_new_tab.js?v=896d254890d9b47f0281f63bfccf0dee"></script> <script defer src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js" integrity="sha256-ZgMyDAIYDYGxbcpJcfUnYwNevG/xi9OHKaR/8GK+jWc=" crossorigin="anonymous"></script> <script defer src="/assets/al_img_tools/js/zoom.js"></script> <script defer src="/assets/js/progress-bar.js?v=499464c5c63ced6cf7ad62509f1e2610" type="text/javascript"></script> <script src="https://cdn.jsdelivr.net/npm/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js" integrity="sha256-uMJJ3EoTyfRBoTbR+lrfu1uRQ87RZG8AR3cVNuQVeFg=" crossorigin="anonymous"></script> <script>
+    addBackToTop();
+  </script> <script type="module" src="/assets/al_search/js/search/ninja-keys.min.js"></script> <ninja-keys hidebreadcrumbs noautoloadmdicons placeholder="Type to start searching"></ninja-keys> <script src="/assets/al_search/js/search-setup.js"></script> <script>
+// get the ninja-keys element
+const ninja = document.querySelector('ninja-keys');
+
+// add the home and posts menu items
+ninja.data = [{
+    id: "nav-about",
+    title: "about",
+    section: "Navigation",
+    handler: () => {
+      window.location.href = "/";
+    },
+  },{id: "nav-blog",
+          title: "blog",
+          description: "",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/blog/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "publications by categories in reversed chronological order. generated by jekyll-scholar.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
+          },
+        },{id: "nav-projects",
+          title: "projects",
+          description: "A growing collection of your cool projects.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/projects/";
+          },
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "Edit the `_data/repositories.yml` and change the `github_users` and `github_repos` lists to include your own GitHub profile and repositories.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "nav-teaching",
+          title: "teaching",
+          description: "Course materials, schedules, and resources.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/teaching/";
+          },
+        },{id: "post-语言-神-和谜语-关于三神的谜题",
+        
+          title: "语言，神，和谜语——关于三神的谜题",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/three-god-problem/";
+          
+        },
+      },{id: "post-拉斯维加斯-券商-和筹码",
+        
+          title: "拉斯维加斯，券商，和筹码",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/09/las-vegas-brokers-and-chips/";
+          
+        },
+      },{id: "post-llm-文字-和托尔斯泰-deepseek-v4-pro-0813-会生成-战争与和平-吗",
+        
+          title: "LLM，文字，和托尔斯泰——deepseek v4 pro 0813 会生成《战争与和平》吗？",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/08/llm-writing-tolstoy-deepseek-v4-pro/";
+          
+        },
+      },{id: "post-一个按钮-按下-50-概率把你所有资产变为原先的-0-1-倍-50-概率把你所有资产变为原先的-9-倍-我们应该按下它吗",
+        
+          title: "一个按钮，按下 50% 概率把你所有资产变为原先的 0.1 倍，50% 概率把你所有资产变为原先的 9 倍，我们应该按下它吗？",
+        
+        description: "",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/should-you-press-the-wealth-button/";
+          
+        },
+      },{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
+          title: 'A simple inline announcement with Markdown emoji! <img class="emoji" title=":sparkles:" alt=":sparkles:" src="https://github.githubassets.com/images/icons/emoji/unicode/2728.png" height="20" width="20"> <img class="emoji" title=":smile:" alt=":smile:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "news-lin-hsuancheng-39-s-corner-was-deployed-fireworks-fireworks-fireworks",
+          title: 'Lin Hsuancheng&#39;s Corner was deployed <img class="emoji" title=":fireworks:" alt=":fireworks:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f386.png" height="20" width="20"><img class="emoji" title=":fireworks:" alt=":fireworks:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f386.png" height="20" width="20"><img class="emoji" title=":fireworks:" alt=":fireworks:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f386.png" height="20" width="20">',
+          description: "",
+          section: "News",},{id: "news-we-built-linhsuancheng-stream-sieve-https-github-com-linhsuancheng-stream-sieve-tada-rocket",
+          title: 'We built [LinHsuancheng/stream-sieve](https://github.com/LinHsuancheng/stream-sieve)! <img class="emoji" title=":tada:" alt=":tada:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f389.png" height="20" width="20"> <img class="emoji" title=":rocket:" alt=":rocket:" src="https://github.githubassets.com/images/icons/emoji/unicode/1f680.png" height="20" width="20">',
+          description: "",
+          section: "News",},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%68%73%75%61%6E%63%68%65%6E%67_%6C%69%6E@%73%74%75.%70%6B%75.%65%64%75.%63%6E", "_blank");
+        },
+      },{
+        id: 'social-rss',
+        title: 'RSS Feed',
+        section: 'Socials',
+        handler: () => {
+          window.open("/feed.xml", "_blank");
+        },
+      },];
+
+</script> <script src="/assets/al_search/js/shortcut-key.js"></script> <script defer src="/assets/al_email_protect/js/email-protect.js"></script> </body> </html>
