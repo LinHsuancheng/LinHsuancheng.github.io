@@ -200,10 +200,13 @@ $$
 #### 我们与经典解法的区别
 
 可以看到，我们的构造和经典构造基本一样，区别只在于第一个问题，我们询问：
+
 $$
 \forall B \operatorname{Ask}_{B}(\text{C is Random})
 $$
+
 而经典构造询问：
+
 $$
 \operatorname{Ask}_{A}(\text{B is Random})
 $$
