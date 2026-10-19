@@ -30,11 +30,13 @@ related_posts: false
 首先，让我们对问题有一个形式化的定义。
 
 我们把神看作一个黑盒函数，祂掌握了任意命题 $P$ 的真假，但是由于祂的一点小癖好，祂不会告诉你 $\mathbb{1}[P]$（也就是命题 $P$ 的真假），而是告诉你
+
 $$
 Ask_{god}(P) := \mathbb{1}[P] \oplus key_{god} \oplus key_{language}
 $$
 
 其中 $key_{god}$ 是神的身份密钥，$key_{language}$ 是语言密钥，分别有：
+
 $$
 key_{god} = \begin{cases}
 0 & \text{if god is True} \\
@@ -55,10 +57,13 @@ $$
 #### 一点简单的小 Trick
 
 我们很容易想到，对所有 $key_{language}$，我们都可以询问 $P \oplus key_{language}$，来消除语言密钥的影响。原因是对所有 $a$，我们都有
+
 $$
 a \oplus a = 0
 $$
+
 这样就有
+
 $$
 \begin{aligned}
 \operatorname{Ask}_{\text{god}}(P \oplus key_{\text{language}})
@@ -71,10 +76,13 @@ $$
 因此，对所有我们实际感兴趣的命题 $P$，我们都可以询问 $P \oplus key_{language}$ 来假装实际上没有语言 Key。在接下来的论述中，我们假设实际上没有语言 Key。
 
 同样的，我们也可以通过询问 $P \oplus key_{god}$ 来消除神的身份密钥的影响。但这里有一个小问题：对于 Random 神来说，$key_{god}$ 是随机的，因此，询问 
+
 $$
 P \oplus key_{god}
 $$
+
 的结果是
+
 $$
 \begin{aligned}
 \operatorname{Ask}_{\text{god}}(P \oplus key_{\text{god}})
@@ -92,33 +100,28 @@ $$
 
 #### 我们的解答
 
-在这里我们给出一个解答。我们注意到，实际上有了合适的提问方式之后，True 和 False 都是可靠的神谕机，而 Random 是一个坏蛋。因此我们的第一步，是找到坏蛋，然后不问通过一通乱搞，我们找到了这样的一个命题：
+在这里我们给出一个解答。我们注意到，实际上有了合适的提问方式之后，True 和 False 都是可靠的神谕机，而 Random 是一个坏蛋。因此我们的第一步，是找到坏蛋，然后不问祂；或者至少，我们要找到一台可靠的神谕机，然后我们问祂问题。
+
+通过一通乱搞，我们找到了这样的一个命题：
+
 $$
 P := \forall B \operatorname{Ask}_{B}(\text{C is True}) 
 $$
-然后我们询问 $Ask_A(P)$：如果 A 是 Random，我们会得到 true 或者 false 的随机答案；如果 B 是 Random，我们会得到 false（因为 Random 神的回答是随机的，所以 A 不知道 $\forall B \operatorname{Ask}_{B}$ 是什么东西）；如果 C 是 Random，我们会得到 true（因为 C is True 是 false，而 AB 是可靠的神谕机，我们会得到）。
 
-总结起来，如果回答是 true，那么 AC 可能是 Random，而 B 是可靠的神谕机；如果回答是 false，那么 AB 可能是 Random，而 C 是可靠的神谕机。
+然后我们 $Ask_A(P)$：如果 A 是 Random，我们会得到 true 或者 false 的随机答案；如果 B 是 Random，我们会得到 false（因为 Random 神的回答是随机的，所以 A 不知道 $\forall B \operatorname{Ask}_{B}$ 是什么东西）；如果 C 是 Random，我们会得到 true（因为 C is True 是 false，而 AB 是可靠的神谕机）。
 
-这样，通过一次问答，我们得到了一个可靠的神谕机。接下来，我们可以问这个可靠的神谕机两个问题，来确定三位神的身份。
-
-不妨设 B 是可靠的神谕机。我们可以问 B 两个问题：问题;或者至少，我们要找到一台可靠的神谕机，然后我们问祂问题。
-
-通过一通乱搞，我们找到了这样的一个命题：
-$$
-P := \forall B \operatorname{Ask}_{B}(\text{C is Random}) 
-$$
-然后我们询问 $Ask_A(P)$：如果 A 是 Random，我们会得到 true 或者 false 的随机答案；如果 B 是 Random，我们会得到 false（因为 Random 神的回答是随机的，所以 A 不知道 $\forall B \operatorname{Ask}_{B}$ 是什么东西）；如果 C 是 Random，我们会得到 true（因为 C is True 是 true，而 AB 是可靠的神谕机）。
-
-总结起来，如果回答是 true，那么 AC 可能是 Random，而 B 是可靠的神谕机；如果回答是 false，那么 AB 可能是 Random，而 C 是可靠的神谕机。
+**总结起来，如果回答是 true，那么 AC 可能是 Random，而 B 是可靠的神谕机；如果回答是 false，那么 AB 可能是 Random，而 C 是可靠的神谕机。**
 
 这样，通过一次问答，我们得到了一个可靠的神谕机。接下来，我们可以问这个可靠的神谕机两个问题，来确定三位神的身份。
 
 不妨设 B 是可靠的神谕机。我们可以问 B 两个问题：
+
 $$ 
 Ask_B(\text{B is True})
 $$
+
 和
+
 $$
 Ask_B(\text{C is Random})
 $$
@@ -205,4 +208,4 @@ $$
 \operatorname{Ask}_{A}(\text{B is Random})
 $$
 
-简单的分析告诉我们这两个问题是等价的。
+简单的分析告诉我们这两个问题是等价的，因此，我们的方法除了较繁琐以外，和经典的解法好像没什么不同。
