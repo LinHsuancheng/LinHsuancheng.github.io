@@ -201,11 +201,11 @@ $$
 
 可以看到，我们的构造和经典构造基本一样，区别只在于第一个问题，我们询问：
 $$
-\forall B \operatorname{Ask}_{B}(\text{C is True})
+\forall B \operatorname{Ask}_{B}(\text{C is Random})
 $$
 而经典构造询问：
 $$
 \operatorname{Ask}_{A}(\text{B is Random})
 $$
 
-简单的分析告诉我们这两个问题是等价的，因此，我们的方法除了较繁琐以外，和经典的解法好像没什么不同。
+简单的分析告诉我们这两个问题在寻找神谕机这个目的上是等价的，因此，我们的方法除了较繁琐以外，和经典的解法好像没什么不同。
