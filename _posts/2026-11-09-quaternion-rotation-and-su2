@@ -279,7 +279,7 @@ $$
 ### $\mathrm{SU}(2)$ 双覆盖和自旋
 事实上，上述构造的 $U$ 是 $\mathrm{SU}(2)$ 中的元素。因为有 $U^\dagger U = e^{i\theta \mathbf{n} \cdot \boldsymbol{\sigma}} e^{-i\theta \mathbf{n} \cdot \boldsymbol{\sigma}} = e^{0} = I$，且 $U$ 可以通过 $U(\alpha) = e^{-i\alpha \mathbf{n} \cdot \boldsymbol{\sigma}}$ 让 $\alpha$ 从 $\theta$ 连续地变形到 $0$，而行列式保持不变，因此 $\det(U) = 1$。(我们省略了这是一个满射的证明，这可以通过每一个 $\mathrm{SU}(2)$ 元素都可以写成特定形式来证明)
 
-而每个 $U$ 都诱导一个变换 $U \to (X \to U X U^\dagger)$，不难发现，$U$ 和 $-U$ 都对应同一个变换 $X \to U X U^\dagger = (-U) X (-U)^\dagger$，而 $X \to U X U^\dagger$ 又对应 $\mathrm{SO}(3)$（我们同样省略了满射的证明）。因此我们得到了 $\mathrm{SU}(2) \to \mathrm{SO}(3)$ 的一个二对一映射：
+而每个 $U$ 都诱导一个变换 $U \to (X \to U X U^\dagger)$，不难发现，$U$ 和 $-U$ 都对应同一个变换 $X \to U X U^\dagger = (-U) X (-U)^\dagger$，而 $X \to U X U^\dagger$ 又对应 $\mathrm{SO}(3)$（我们同样省略了满射的证明）。因此，我们得到了 $\mathrm{SU}(2) \to \mathrm{SO}(3)$ 的一个二对一映射：
 
 $$
 \pm U \to (X \to U X U^\dagger)
@@ -287,4 +287,4 @@ $$
 
 我们由此说 $\mathrm{SU}(2)$ 和 $\mathrm{SO}(3)$ 具有双覆盖关系 $SU(2)/{\pm I} \cong SO(3)$。
 
-我们用一个小例子说明这一点，在三维现实世界 $\mathrm{SO}(3)$ 中，$U(\pi) X U^\dagger(\pi)$ 对应的是旋转 $2\pi$ 角度，看起来回到了原位，但是在底层旋转空间 $\mathrm{SU}(2)$ 中，角度只经过了 $\pi$，只有再经过 $\pi$ 角度 $U(2\pi)$ 才回到恒等变换 $U = e^{2\pi n \cdot \sigma} = I$，在现实世界中我们已经转了两圈，总共 $4\pi$ 了！事实上，这正是电子自旋的来源，我们有一个很不错的视频来说明这一点[Dirac's belt trick, Topology, and Spin ½ particles - YouTube](https://www.youtube.com/watch?v=ACZC_XEyg9U)
+我们用一个小例子说明这一点。在三维现实世界 $\mathrm{SO}(3)$ 中，$U(\pi) X U^\dagger(\pi)$ 对应的是旋转 $2\pi$ 角度，看起来回到了原位，但是在底层旋转空间 $\mathrm{SU}(2)$ 中，角度只经过了 $\pi$，$U = e^{\pi n \cdot \sigma} = -I$。只有再经过 $\pi$ 才回到恒等变换 $U = e^{2\pi n \cdot \sigma} = I$，这时，在现实世界中我们已经转了两圈，总共 $4\pi$ 了！事实上，这正是电子自旋的来源，我们有一个很不错的视频来说明这一点 [Dirac's belt trick, Topology, and Spin ½ particles - YouTube](https://www.youtube.com/watch?v=ACZC_XEyg9U)
